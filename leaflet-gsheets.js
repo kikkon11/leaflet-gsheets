@@ -17,7 +17,7 @@ function init() {
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vTobcJnogeYZx0ajp2-_f1gNIQ_rMvYA_gDSOCsNaQr9l6YuL3-wv31ViEaXoNQ8CctWXgFTdFKbgQT/pubhtml";
 */
   var polyURL =
-    "https://docs.google.com/spreadsheets/d/1HWyOBFEjDl3VCwsxNuT3iZfUMj-gDamdjFj3KwoCt0c/edit?usp=sharing";
+    "https://docs.google.com/spreadsheets/d/1EUFSaqi30b6oefK0YWWNDDOzwmCTTXlXkFHAc2QrUxM/edit?usp=sharing";
   var pointsURL =
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vSI1yWMSzXfvnQ4HaSw0gZ6NVvMlj5SuA1n9ULMGOAUiJCs1PRVu-FvQj8WaWcunRQxPF-3d9Wlr_Os/pubhtml?gid=0&single=true"; 
 
