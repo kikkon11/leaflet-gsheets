@@ -13,7 +13,7 @@ function init() {
   // the first is the polygon layer and the second the points
   //var polyURL ="https://docs.google.com/spreadsheets/d/e/2PACX-1vR56hl4sLcz3OAT3Vsb-dSEHMEm3QA8TSyJLu8CFnOVmPnpCdOHybH1opIn11WDvbVyw33ROi6Uzmnd/pubhtml";
     //"https://docs.google.com/spreadsheets/d/1EUFSaqi30b6oefK0YWWNDDOzwmCTTXlXkFHAc2QrUxM/edit?usp=sharing";
- // var pointsURL ="https://docs.google.com/spreadsheets/d/1QI_8fQecZUku-ev3dWjYJYtQU-csscG2p6thFi4FDqA/edit?usp=sharing";
+  var pointsURL ="https://docs.google.com/spreadsheets/d/1yIniMddiTvVcJFBO45tjeD6tSShpMJln9DfPcbKg0dU/edit?usp=sharing";
 
   var polyURL ="https://docs.google.com/spreadsheets/d/1QI_8fQecZUku-ev3dWjYJYtQU-csscG2p6thFi4FDqA/edit?usp=sharing";
   //var pointsURL ="https://docs.google.com/spreadsheets/d/1hEO51Lt59-IIrnAfDuB7eOJaKBYm5C_fdWIWEq4hLho/edit?usp=sharing"; 
