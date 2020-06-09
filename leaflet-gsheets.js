@@ -19,7 +19,7 @@ function init() {
   var polyURL =
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vSY7yychIJQRdBRbXHWEvwkft6IXeSaORHaKuCCTcvW0AXONN2lBkzPJ6POQzkImOJ60W5WesEX9RcC/pubhtml";
   var pointsURL =
-    "https://docs.google.com/spreadsheets/d/1hEO51Lt59-IIrnAfDuB7eOJaKBYm5C_fdWIWEq4hLho/edit?usp=sharing"; 
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vSI1yWMSzXfvnQ4HaSw0gZ6NVvMlj5SuA1n9ULMGOAUiJCs1PRVu-FvQj8WaWcunRQxPF-3d9Wlr_Os/pubhtml?gid=0&single=true"; 
 
   Tabletop.init({ key: polyURL, callback: addPolygons, simpleSheet: true });
   Tabletop.init({ key: pointsURL, callback: addPoints, simpleSheet: true }); // simpleSheet assumes there is only one table and automatically sends its data
