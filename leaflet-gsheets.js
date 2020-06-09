@@ -8,11 +8,11 @@
 // init() is called as soon as the page loads
 function init() {
   // PASTE YOUR URLs HERE
-https://docs.google.com/spreadsheets/d/e/2PACX-1vRAVgIyH3Tcfu9qRKULUlhMUVhy3EXNTV2-brnA9PTZDvLtu-f24y6BgSt_Ciqj_sWJdNALVqsjcSEy/pubhtml
+
   // these URLs come from Google Sheets 'shareable link' form
   // the first is the polygon layer and the second the points
-  var polyURL =
-    "https://docs.google.com/spreadsheets/d/1EUFSaqi30b6oefK0YWWNDDOzwmCTTXlXkFHAc2QrUxM/edit?usp=sharing";
+  var polyURL =https://docs.google.com/spreadsheets/d/e/2PACX-1vRAVgIyH3Tcfu9qRKULUlhMUVhy3EXNTV2-brnA9PTZDvLtu-f24y6BgSt_Ciqj_sWJdNALVqsjcSEy/pubhtml
+    //"https://docs.google.com/spreadsheets/d/1EUFSaqi30b6oefK0YWWNDDOzwmCTTXlXkFHAc2QrUxM/edit?usp=sharing";
   var pointsURL =
     "https://docs.google.com/spreadsheets/d/1kjJVPF0LyaiaDYF8z_x23UulGciGtBALQ1a1pK0coRM/edit?usp=sharing";
 
