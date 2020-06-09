@@ -16,7 +16,7 @@ function init() {
   var pointsURL =
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vTobcJnogeYZx0ajp2-_f1gNIQ_rMvYA_gDSOCsNaQr9l6YuL3-wv31ViEaXoNQ8CctWXgFTdFKbgQT/pubhtml";
 */
-  addPointsvar polyURL =
+  var polyURL =
     "https://docs.google.com/spreadsheets/d/1EUFSaqi30b6oefK0YWWNDDOzwmCTTXlXkFHAc2QrUxM/edit?usp=sharing";
   var pointsURL =
     "https://docs.google.com/spreadsheets/d/1kjJVPF0LyaiaDYF8z_x23UulGciGtBALQ1a1pK0coRM/edit?usp=sharing";
