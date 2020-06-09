@@ -11,11 +11,11 @@ function init() {
 
   // these URLs come from Google Sheets 'shareable link' form
   // the first is the polygon layer and the second the points
-  /*var polyURL ="https://docs.google.com/spreadsheets/d/e/2PACX-1vR56hl4sLcz3OAT3Vsb-dSEHMEm3QA8TSyJLu8CFnOVmPnpCdOHybH1opIn11WDvbVyw33ROi6Uzmnd/pubhtml";
+  //var polyURL ="https://docs.google.com/spreadsheets/d/e/2PACX-1vR56hl4sLcz3OAT3Vsb-dSEHMEm3QA8TSyJLu8CFnOVmPnpCdOHybH1opIn11WDvbVyw33ROi6Uzmnd/pubhtml";
     //"https://docs.google.com/spreadsheets/d/1EUFSaqi30b6oefK0YWWNDDOzwmCTTXlXkFHAc2QrUxM/edit?usp=sharing";
   var pointsURL =
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vTobcJnogeYZx0ajp2-_f1gNIQ_rMvYA_gDSOCsNaQr9l6YuL3-wv31ViEaXoNQ8CctWXgFTdFKbgQT/pubhtml";
-*/
+    "https://docs.google.com/spreadsheets/d/1oOEdfdzPCmtesbkFJ86YvUlJhiZYzCzYDXupEhzI1VM/edit?usp=sharing";
+
   var polyURL ="https://docs.google.com/spreadsheets/d/1HWyOBFEjDl3VCwsxNuT3iZfUMj-gDamdjFj3KwoCt0c/edit?usp=sharing";
   //var pointsURL ="https://docs.google.com/spreadsheets/d/1hEO51Lt59-IIrnAfDuB7eOJaKBYm5C_fdWIWEq4hLho/edit?usp=sharing"; 
 
