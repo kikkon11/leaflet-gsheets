@@ -11,7 +11,7 @@ function init() {
 
   // these URLs come from Google Sheets 'shareable link' form
   // the first is the polygon layer and the second the points
-  var polyURL ="https://docs.google.com/spreadsheets/d/e/2PACX-1vRl6efZbJLyupFePYtWTrEN5S_cbKZ2BI1vjmOlSzyvEHvlxIbklOKVh0HzSHBqP_YuwixgmPslPhEV/pubhtml"
+  var polyURL ="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBI3uTYe5k19dFFXapTxVv_zJXJfHcmZI8WqPb3mI1rG7Py_fYyB6TGYB-_4Hbqy1Z7tH0UhdwNy_4/pubhtml"
     //"https://docs.google.com/spreadsheets/d/1EUFSaqi30b6oefK0YWWNDDOzwmCTTXlXkFHAc2QrUxM/edit?usp=sharing";
   var pointsURL =
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vTobcJnogeYZx0ajp2-_f1gNIQ_rMvYA_gDSOCsNaQr9l6YuL3-wv31ViEaXoNQ8CctWXgFTdFKbgQT/pubhtml";
