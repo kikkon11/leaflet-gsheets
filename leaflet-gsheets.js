@@ -28,7 +28,7 @@ window.addEventListener("DOMContentLoaded", init);
 // Create a new Leaflet map centered on the continental US
 //var map = L.map("map").setView([40, -100], 4);
 // Create a new Leaflet map centered on the Attica Greece
-var map = L.map("map").setView([37.983, 23.733], 12);
+var map = L.map("map").setView([37.983, 23.733], 13);
 
 // This is the Carto Positron basemap
 var basemap = L.tileLayer(
@@ -42,8 +42,8 @@ var basemap = L.tileLayer(
 );
 basemap.addTo(map);
 
-// Εντοπίζει τη θέση μας
-map.locate({setView: true, maxZoom: 12});
+// Locating our position
+map.locate({setView: true, maxZoom: 13});
 
 var sidebar = L.control
   .sidebar({
