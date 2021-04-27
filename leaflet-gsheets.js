@@ -9,17 +9,11 @@
 function init() {
   // PASTE YOUR URLs HERE
 
-  // these URLs come from Google Sheets 'shareable link' form
-  // the first is the polygon layer and the second the points
-  //var polyURL ="https://docs.google.com/spreadsheets/d/e/2PACX-1vR56hl4sLcz3OAT3Vsb-dSEHMEm3QA8TSyJLu8CFnOVmPnpCdOHybH1opIn11WDvbVyw33ROi6Uzmnd/pubhtml";
-    //"https://docs.google.com/spreadsheets/d/1EUFSaqi30b6oefK0YWWNDDOzwmCTTXlXkFHAc2QrUxM/edit?usp=sharing";
-  //var pointsURL ="https://docs.google.com/spreadsheets/d/1yIniMddiTvVcJFBO45tjeD6tSShpMJln9DfPcbKg0dU/edit?usp=sharing";
-  
   var pointsURL ="https://docs.google.com/spreadsheets/d/14Rff2zFpf6YYSPilFuU4Jyk27KkmPovLFqwMmKwX2WQ/edit?usp=sharing";
-  //var polyURL ="https://docs.google.com/spreadsheets/d/1cxH2l6Z0-wlgzLQgJs4-eMsDZQAq2XrLwQpf04e3Mx8/edit?usp=sharing";
+  
+  //var polyURL ="https://docs.google.com/spreadsheets/d/1qbE8mDZx7Td1HKh6wlcpSTXUjyAxRIeEhWpPyCd3TKE/edit?usp=sharing";
+   
   var polyURL ="https://docs.google.com/spreadsheets/d/1MODW0IWSSoZLR9RvsrQ3WXUk6YiDcJ4FYnNrJz3-ifE/edit?usp=sharing";
-  //var pointsURL ="https://docs.google.com/spreadsheets/d/1hEO51Lt59-IIrnAfDuB7eOJaKBYm5C_fdWIWEq4hLho/edit?usp=sharing"; 
-
   Tabletop.init({ key: polyURL, callback: addPolygons, simpleSheet: true });
   Tabletop.init({ key: pointsURL, callback: addPoints, simpleSheet: true }); // simpleSheet assumes there is only one table and automatically sends its data
 }
@@ -27,8 +21,7 @@ window.addEventListener("DOMContentLoaded", init);
 
 // Create a new Leaflet map centered on the continental US
 //var map = L.map("map").setView([40, -100], 4);
-// Create a new Leaflet map centered on the Attica Greece
-var map = L.map("map").setView([37.983, 23.733], 13);
+var map = L.map("map").setView([37.983, 23.733], 12);
 
 // This is the Carto Positron basemap
 var basemap = L.tileLayer(
@@ -42,7 +35,7 @@ var basemap = L.tileLayer(
 );
 basemap.addTo(map);
 
-// Locating our position
+// Εντοπίζει τη θέση μας
 map.locate({setView: true, maxZoom: 13});
 
 var sidebar = L.control
@@ -53,7 +46,7 @@ var sidebar = L.control
   })
   .addTo(map);
 
-let panelID = "my-info-panel";
+  let panelID = "my-info-panel";
 var panelContent = {
   id: panelID,
   tab: "<i class='fa fa-bars active'></i>",
@@ -200,9 +193,11 @@ function addPoints(data) {
       prefix: "glyphicon",
       extraClasses: "fa-rotate-0"
     });
+
     let myIcon = L.icon({
       iconUrl: './images/marker.png',
       iconSize: [30, 60]
+    });
     if (!markerType.includes("circle")) {
       marker.setIcon(myIcon);
     }
@@ -218,6 +213,6 @@ function getColor(type) {
   case "Restaurant":
     return "blue";
   default:
-    return "red";
+    return "green";
   }
 }
