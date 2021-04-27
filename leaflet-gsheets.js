@@ -44,7 +44,7 @@ map.locate({setView: true, maxZoom: 13});
   // Αλλαγή εικονιδίου εντοπισμού  
    var locationIcon = L.icon({
     iconUrl: './images/pointer.jpg',
-    iconSize:     [30, 50], // size of the icon
+    iconSize:     [50, 50], // size of the icon
 
 });   
 
