@@ -38,17 +38,6 @@ basemap.addTo(map);
 // Εντοπίζει τη θέση μας
 map.locate({setView: true, maxZoom: 13});
 
-var sidebar = L.control
-  .sidebar({
-    container: "sidebar",
-    closeButton: true,
-    position: "right"
-  })
-  .addTo(map);
-
-// Εντοπισμός θέσης χρήστη 
-  map.locate({setView: true, maxZoom: 12});
-  
  // Popup Μήνυμα επιτυχούς εντοπισμού 
  function onLocationFound(e) {
     var radius = e.accuracy;
@@ -73,8 +62,15 @@ map.on('locationfound', onLocationFound);
 }
 map.on('locationerror', onLocationError);
 
+var sidebar = L.control
+  .sidebar({
+    container: "sidebar",
+    closeButton: true,
+    position: "right"
+  })
+  .addTo(map);
 
-  let panelID = "my-info-panel";
+let panelID = "my-info-panel";
 var panelContent = {
   id: panelID,
   tab: "<i class='fa fa-bars active'></i>",
