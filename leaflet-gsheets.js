@@ -42,9 +42,6 @@ var basemap = L.tileLayer(
 );
 basemap.addTo(map);
 
-// Locating our posision
-map.locate({setView: true, maxZoom: 13});
-
 var sidebar = L.control
   .sidebar({
     container: "sidebar",
