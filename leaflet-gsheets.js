@@ -43,7 +43,7 @@ var basemap = L.tileLayer(
 basemap.addTo(map);
 
 // Εντοπίζει τη θέση μας
-map.locate({setView: true, maxZoom: 13});
+map.locate({setView: true, maxZoom: 12});
 
 var sidebar = L.control
   .sidebar({
