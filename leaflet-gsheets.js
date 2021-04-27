@@ -17,7 +17,7 @@ function init() {
   
   var pointsURL ="https://docs.google.com/spreadsheets/d/14Rff2zFpf6YYSPilFuU4Jyk27KkmPovLFqwMmKwX2WQ/edit?usp=sharing"
   //var polyURL ="https://docs.google.com/spreadsheets/d/1cxH2l6Z0-wlgzLQgJs4-eMsDZQAq2XrLwQpf04e3Mx8/edit?usp=sharing";
-  var polyURL ="https://docs.google.com/spreadsheets/d/14Rff2zFpf6YYSPilFuU4Jyk27KkmPovLFqwMmKwX2WQ/edit?usp=sharing";
+  var polyURL ="https://docs.google.com/spreadsheets/d/1MODW0IWSSoZLR9RvsrQ3WXUk6YiDcJ4FYnNrJz3-ifE/edit?usp=sharing";
   //var pointsURL ="https://docs.google.com/spreadsheets/d/1hEO51Lt59-IIrnAfDuB7eOJaKBYm5C_fdWIWEq4hLho/edit?usp=sharing"; 
 
   Tabletop.init({ key: polyURL, callback: addPolygons, simpleSheet: true });
