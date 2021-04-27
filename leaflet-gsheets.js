@@ -215,6 +215,6 @@ function getColor(type) {
   case "Restaurant":
     return "blue";
   default:
-    return "green";
+    return "red";
   }
 }
