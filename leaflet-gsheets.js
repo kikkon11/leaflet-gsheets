@@ -43,7 +43,7 @@ map.locate({setView: true, maxZoom: 13});
     var radius = e.accuracy;
   // Αλλαγή εικονιδίου εντοπισμού  
    var locationIcon = L.icon({
-    iconUrl: './images/pointer.png',
+    iconUrl: './images/pointer.jpg',
     iconSize:     [30, 50], // size of the icon
 
 });   
