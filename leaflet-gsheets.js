@@ -46,6 +46,34 @@ var sidebar = L.control
   })
   .addTo(map);
 
+// Εντοπισμός θέσης χρήστη 
+  map.locate({setView: true, maxZoom: 12});
+  
+ // Popup Μήνυμα επιτυχούς εντοπισμού 
+ function onLocationFound(e) {
+    var radius = e.accuracy;
+  // Αλλαγή εικονιδίου εντοπισμού  
+   var locationIcon = L.icon({
+    iconUrl: 'myLocationIcon.png',
+    iconSize:     [30, 50], // size of the icon
+
+});   
+
+    L.marker(e.latlng, {icon: locationIcon}).addTo(map)
+        .bindPopup("You are within " + radius + " meters from this point").openPopup();
+
+    L.circle(e.latlng, radius).addTo(map);
+}
+
+map.on('locationfound', onLocationFound);
+
+ // Μήνυμα σφάλματος εντοπισμού
+ function onLocationError(e) {
+    alert(e.message);
+}
+map.on('locationerror', onLocationError);
+
+
   let panelID = "my-info-panel";
 var panelContent = {
   id: panelID,
