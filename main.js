@@ -42,18 +42,15 @@ map.locate({setView: true, maxZoom: 13});
 
  // Message for successful locating
  function onLocationFound(e) {
-  // var radius = e.accuracy;
+   
   // locating icon  
    var locationIcon = L.icon({
-    iconUrl: './images/pointer.jpg',
-    iconSize:     [50, 50], 
-
+     iconUrl: './images/pointer.jpg',
+     iconSize:     [50, 50], 
 });   
 
     L.marker(e.latlng, {icon: locationIcon}).addTo(map)
-     //   .bindPopup("You are within " + radius + " meters from this point").openPopup();
-
-  //  L.circle(e.latlng, radius).addTo(map);
+       
 }
 
 map.on('locationfound', onLocationFound);
@@ -223,8 +220,13 @@ function addPoints(data) {
       prefix: "fa",
       extraClasses: "fa-rotate-0",
     });
+    //changing icon
+    let myIcon = L.icon({
+      iconUrl: './images/marker.png',
+      iconSize: [30, 60]
+    });
     if (!markerType.includes("circle")) {
-      marker.setIcon(icon);
+      marker.setIcon(myIcon);
     }
   }
 }
