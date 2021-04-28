@@ -40,7 +40,7 @@ map.locate({setView: true, maxZoom: 13});
 
  // Message for successful locating
  function onLocationFound(e) {
-    var radius = e.accuracy;
+   // var radius = e.accuracy;
   // locating icon  
    var locationIcon = L.icon({
     iconUrl: './images/pointer.jpg',
