@@ -34,7 +34,7 @@ var basemap = L.tileLayer(
   }
 );
 basemap.addTo(map);
-
+/*
 // Εντοπίζει τη θέση μας
 map.locate({setView: true, maxZoom: 13});
 
@@ -61,7 +61,7 @@ map.on('locationfound', onLocationFound);
     alert(e.message);
 }
 map.on('locationerror', onLocationError);
-
+*/
 var sidebar = L.control
   .sidebar({
     container: "sidebar",
