@@ -223,7 +223,7 @@ function addPoints(data) {
       iconSize: [30, 60]
     });*/
     if (!markerType.includes("circle")) {
-      marker.setIcon(myIcon);
+      marker.setIcon(icon);
     }
   }
 }
