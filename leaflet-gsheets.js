@@ -34,14 +34,14 @@ var basemap = L.tileLayer(
   }
 );
 basemap.addTo(map);
-/*
-// Εντοπίζει τη θέση μας
+
+// Locating our position
 map.locate({setView: true, maxZoom: 13});
 
- // Popup Μήνυμα επιτυχούς εντοπισμού 
+ // Message for successful locating
  function onLocationFound(e) {
     var radius = e.accuracy;
-  // Αλλαγή εικονιδίου εντοπισμού  
+  // locating icon  
    var locationIcon = L.icon({
     iconUrl: './images/pointer.jpg',
     iconSize:     [50, 50], // size of the icon
@@ -56,7 +56,7 @@ map.locate({setView: true, maxZoom: 13});
 
 map.on('locationfound', onLocationFound);
 
- // Μήνυμα σφάλματος εντοπισμού
+ // Message for error locating
  function onLocationError(e) {
     alert(e.message);
 }
@@ -217,11 +217,11 @@ function addPoints(data) {
       prefix: "glyphicon",
       extraClasses: "fa-rotate-0"
     });
-
-    /*let myIcon = L.icon({
+    //changing icon
+    let myIcon = L.icon({
       iconUrl: './images/marker.png',
       iconSize: [30, 60]
-    });*/
+    });
     if (!markerType.includes("circle")) {
       marker.setIcon(icon);
     }
