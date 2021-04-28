@@ -24,8 +24,8 @@ let panelID = "my-info-panel";
  */
 function init() {
   // Create a new Leaflet map centered on the Attica, Greece
-  var map = L.map("map").setView([37.98, 23.73], 13);
-
+  map = L.map("map").setView([37.98, 23.73], 13);
+      
   // This is the Carto Positron basemap
   L.tileLayer(
     "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}{r}.png",
