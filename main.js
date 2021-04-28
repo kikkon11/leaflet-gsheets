@@ -50,7 +50,7 @@ map.locate({setView: true, maxZoom: 13});
 
 });   
 
-   // L.marker(e.latlng, {icon: locationIcon}).addTo(map)
+    L.marker(e.latlng, {icon: locationIcon}).addTo(map)
      //   .bindPopup("You are within " + radius + " meters from this point").openPopup();
 
   //  L.circle(e.latlng, radius).addTo(map);
