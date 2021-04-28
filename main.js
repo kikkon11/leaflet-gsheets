@@ -36,6 +36,33 @@ function init() {
       maxZoom: 19,
     }
   ).addTo(map);
+  
+  // Locating our position
+map.locate({setView: true, maxZoom: 13});
+
+ // Message for successful locating
+ function onLocationFound(e) {
+   var radius = e.accuracy;
+  // locating icon  
+   var locationIcon = L.icon({
+    iconUrl: './images/pointer.jpg',
+    iconSize:     [50, 50], 
+
+});   
+
+    L.marker(e.latlng, {icon: locationIcon}).addTo(map)
+        .bindPopup("You are within " + radius + " meters from this point").openPopup();
+
+    L.circle(e.latlng, radius).addTo(map);
+}
+
+map.on('locationfound', onLocationFound);
+
+ // Message for error locating
+ function onLocationError(e) {
+    alert(e.message);
+}
+map.on('locationerror', onLocationError);
 
   sidebar = L.control
     .sidebar({
