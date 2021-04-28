@@ -48,10 +48,10 @@ map.locate({setView: true, maxZoom: 13});
 
 });   
 
-    L.marker(e.latlng, {icon: locationIcon}).addTo(map)
+    //L.marker(e.latlng, {icon: locationIcon}).addTo(map)
         .bindPopup("You are within " + radius + " meters from this point").openPopup();
 
-    L.circle(e.latlng, radius).addTo(map);
+    //L.circle(e.latlng, radius).addTo(map);
 }
 
 map.on('locationfound', onLocationFound);
@@ -61,7 +61,7 @@ map.on('locationfound', onLocationFound);
     alert(e.message);
 }
 map.on('locationerror', onLocationError);
-/*
+
 var sidebar = L.control
   .sidebar({
     container: "sidebar",
@@ -81,7 +81,7 @@ sidebar.addPanel(panelContent);
 
 map.on("click", function() {
   sidebar.close(panelID);
-});*/
+});
 
 // These are declared outisde the functions so that the functions can check if they already exist
 var polygonLayer;
