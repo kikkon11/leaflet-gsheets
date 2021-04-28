@@ -61,7 +61,7 @@ map.on('locationfound', onLocationFound);
     alert(e.message);
 }
 map.on('locationerror', onLocationError);
-*/
+
 var sidebar = L.control
   .sidebar({
     container: "sidebar",
@@ -82,7 +82,7 @@ sidebar.addPanel(panelContent);
 map.on("click", function() {
   sidebar.close(panelID);
 });
-
+*/
 // These are declared outisde the functions so that the functions can check if they already exist
 var polygonLayer;
 var pointGroupLayer;
